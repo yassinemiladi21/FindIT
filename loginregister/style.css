@@ -24,8 +24,9 @@ body {
 .desc {
   width: 60%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 desc div {
@@ -51,18 +52,19 @@ desc div {
 }
 
 .images {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
+  align-items: flex-end;
 }
 
 img {
-  max-width: 20rem;
+  width: 13rem;
 }
 
 image {
   max-width: 100%;
+  height: auto;
 }
 
 .login,
@@ -169,7 +171,7 @@ input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1250px) {
   img {
     display: none;
   }
@@ -203,5 +205,15 @@ input[type="submit"]:hover {
 
   .login {
     min-width: 370px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    gap: 1rem;
+  }
+
+  .login {
+    min-width: 340px;
   }
 }
